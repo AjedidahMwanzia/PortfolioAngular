@@ -22,7 +22,20 @@
 .resume a{
     color: red;
 }
-.col2{
+.container3 .one{
+    text-decoration: none;
+    color: #bfc0c0;
+    font-size: 1.2vw;
+    padding: 1vw;  
+    font-family: 'Poppins', sans-serif;
+  }
+  .container3{
+    color: #bfc0c0;
+    padding-left: 9vw;
+
+  }
+
+  .col2{
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -61,48 +74,374 @@
   justify-content: space-between;
   margin-top: 2vw;
 }
-.col2 h5{
-    color: #bfc0c0;
-    font-size: 1vw;
-    font-family: 'Poppins', sans-serif;
-  }
-  .col2 h5 span{
-    color: #c4321e;
-  }
-  .story p{
-    color: #bfc0c0;
-    font-size: 0.9vw;
-    line-height: 1.8vw;
-    font-family: 'Poppins', sans-serif;
-  }
-  .buttons a{
-    text-decoration: none;
-    color: #bfc0c0;
-    /* border: 0.1vw solid #dd3a24; */
-    padding: 0.8vw;
-    width: 100vw;
-    font-weight: 500;
-    background-color: #c4321e;
-    
-    margin: 1vw;
-    border-radius: 0.vw;
-  }
-  .buttons{
-    margin-top: 2vw;
-  }
-  .image img{
-    border-radius: 2vw;
-    height: 25vw;
+.col3 a{
+  color: #bfc0c0;
+  writing-mode: vertical-rl;
+  font-size: 1.2vw;
+  padding-bottom: 0.5vw;
+  margin-top: 20vw;
+  text-decoration: none;
   
+}
+.section2 h3{
+  text-align: center;
+  font-weight: 600;
+  font-size: 2vw;
+  padding-top: 3vw;
+  color: #bfc0c0;
+}
+.col3{
+  margin-left: 15vw;
+  background-attachment: fixed;
+}
+.col3 .vl{
+    height: 10vw;
+    border-left: 0.2vw solid #bfc0c0;
+    height: 7vw;
+    margin-left: 1vw;
+    top: 0;
+ 
+}
+.experience h1{
+  color: #bfc0c0;
+}
+.col2 h5{
+  color: #bfc0c0;
+  font-size: 1vw;
+  font-family: 'Poppins', sans-serif;
+}
+.col2 h5 span{
+  color: #c4321e;
+}
+.story p{
+  color: #bfc0c0;
+  font-size: 0.9vw;
+  line-height: 1.8vw;
+  font-family: 'Poppins', sans-serif;
+}
+.buttons a{
+  text-decoration: none;
+  color: #bfc0c0;
+  /* border: 0.1vw solid #dd3a24; */
+  padding: 0.8vw;
+  width: 100vw;
+  font-weight: 500;
+  background-color: #c4321e;
+  
+  margin: 1vw;
+  border-radius: 0.vw;
+}
+.buttons{
+  margin-top: 2vw;
+}
+.image img{
+  border-radius: 1vw;
+  height: 25vw;
+
+}
+.image{
+  margin-left: 5vw;
+}
+.story li{
+  color: #bfc0c0;
+  margin-left: 2vw;
+  font-family: 'Poppins', sans-serif;
+}
+#list{
+  margin-bottom: 1vw;
+}
+/* ...................... */
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 79vw;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 0.2vw;
+  background-color: grey;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+}
+
+/* Container around content */
+.container1 {
+  padding: 2vw 2vw;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container1::after {
+  content: '';
+  position: absolute;
+  width: 1.5vw;
+  height: 1.5vw;
+  left: 38.7vw;
+  background-color: #dd3a24;
+  
+  top: 1.5vw;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0%;
+  margin-right: 5vw;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 1vw;
+  width: 0;
+  z-index: 1;
+  right: 2vw;
+  border: medium solid white;
+  border-width: 1vw 0 1vw 1vw;
+  border-color: transparent transparent transparent grey;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 3vw;
+  width: 0;
+  z-index: 1;
+ 
+  border: medium solid white;
+  border-width: 1vw 1vw 1vw 0;
+  border-color: transparent grey transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+
+.right::after {
+  left: -0.03vw;
+  margin-top: 2vw;
+}
+
+.content {
+  padding: 1vw 3vw;
+  color: #bfc0c0;
+  position: relative;
+  border-radius: 0.6vw;
+}
+.timeline{
+  display: flex;
+  flex-direction: row;
+}
+#will{
+  margin-left: -45vw;
+}
+#will2 .content{
+  padding-right: -3vw;
+}
+#experience h1{
+  text-align: center;
+  padding: 3vw;
+  font-weight: 600;
+  margin-top: 3vw;
+}
+/* ..................................................... */
+
+
+#aboutus .story .description {
+  width: 55%;
+  padding-left: 10%;
+}
+#aboutus .story .img img {
+  width: 100%;
+  transition: 0.3s;
+  position: relative;
+  transform: rotate(-10deg);
+  border: 0.1vw solid #494949;
+}
+#aboutus .story .img {
+  position: relative;
+  width: 45%;
+  border: 0.1vw solid #c4321e;
+  transform: rotate(10deg);
+  backdrop-filter: blur(0.1vw);
+}
+#aboutus{
+  padding: 0 10%;
+}
+
+#aboutus .story {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10% 0;
+}
+
+#aboutus .story .description span {
+  display: flex;
+  align-items: center;
+  color: #bfc0c0;
+  font-size: 1vw;
+  margin-bottom: 5%;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+#aboutus .story .description span div {
+  width: 0.8vw;
+  height: 0.8vw;
+  border-radius: 50%;
+  background-color: #252B42;
+  margin-right: 2%;
+}
+#aboutus .story .description p {
+  color: #bfc0c0;
+  font-size: 1vw;
+  line-height: 1.8vw;
+}
+.description a{
+  text-decoration: none;
+  color: #bfc0c0;
+  padding: 0.8vw;
+  width: 100vw;
+  font-weight: 500;
+  background-color: #c4321e;
+  margin-top: 14vw;
+  border-radius: 0.5vw;
+  margin-left: 3vw;
+}
+.load hr{
+  width: 5vw;
+  background-color: #bfc0c0;
+  margin-bottom: -1vw;
+  margin-left: 47vw;
+}
+.load a{
+  text-decoration: none;
+  color: #bfc0c0;
+  font-weight: 700;
+  font-size: 1.5vw;
+  margin-left: 15vw;
+  
+  
+}
+.load{
+  text-align: center;
+}
+/* ........................... */
+/* - - - - - contact styling - - - - - */
+#contact {
+  width: 100%;
+  padding: 5% 5% 0% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#contact .inner {
+  text-align: center;
+  padding: 5%;
+  width: 50%;
+  height: auto;
+  border: #494949 solid 0.1vw;
+  backdrop-filter: blur(0.2vw);
+  position: relative;
+  z-index: 3;
+}
+@media screen and (max-width: 500px) {
+  #contact .inner {
+      text-align: center;
+      padding: 10%;
+      width: 100%;
+      height: auto;
+      border: #494949 solid 0.1vw;
+      backdrop-filter: blur(0.2vw);
+      position: relative;
+      z-index: 3;
   }
-  .image{
-    margin-left: 5vw;
+}
+
+#contact .inner h3 {
+  font-size: 1.5vw;
+  color: #c4321e; 
+}
+@media screen and (max-width: 500px) {
+  #contact .inner h3 {
+      font-size: 3.5vw;
+      color: #c4321e; 
   }
-  .story li{
-    color: #bfc0c0;
-    margin-left: 2vw;
-    font-family: 'Poppins', sans-serif;
+}
+
+#contact .inner p {
+  padding: 3% 0;
+  color: #dcdddd;
+  font-size: 0.9vw;
+  line-height: 1.8vw;
+  margin-bottom: 5%;
+}
+@media screen and (max-width: 500px) {
+  #contact .inner p {
+      padding: 5% 0;
+      color: #dcdddd;
+      font-size: 3vw;
+      line-height: 5vw;
+      margin-bottom: 5%;
   }
-  #list{
-    margin-bottom: 1vw;
+}
+
+#contact .inner a {
+  background-color: #c4321e;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8vw;
+  border-radius: 0.2vw;
+  outline: none;
+  border: none;
+  padding: 2.5% 6%;
+}
+@media screen and (max-width: 500px) {
+  #contact .inner a {
+      background-color: #c4321e; 
+      text-decoration: none;
+      color: #fff;
+      font-size: 2.8vw;
+      border-radius: 1vw;
+      outline: none;
+      border: none;
+      padding: 5% 8%;
   }
+}
+
+#contact .inner a svg {
+  width: 1vw;
+  height: 1vw;
+  margin: 0 1%;
+}
+@media screen and (max-width: 500px) {
+  #contact .inner a svg {
+      width: 2vw;
+      height: 2vw;
+      margin: 0 1%;
+  }
+}
+
+#contact .right p{
+  padding-top: 2vw;
+}
